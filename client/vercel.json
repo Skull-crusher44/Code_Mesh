@@ -2,12 +2,7 @@
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
     ],
-    "env": {
-        "VITE_BACKEND_URL": "@backend_url"
-    },
-    "build": {
-        "env": {
-            "VITE_BACKEND_URL": "@backend_url"
-        }
-    }
+    "framework": "vite",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist"
 }
