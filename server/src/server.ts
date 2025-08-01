@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "public"))) // Serve static files
 const server = http.createServer(app)
 const io = new Server(server, {
 	cors: {
-		origin: "*",
+		origin: "https://meshcode.vercel.app",
 	},
 	maxHttpBufferSize: 1e8,
 	pingTimeout: 60000,
